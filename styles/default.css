@@ -9,6 +9,8 @@ h1{
     font-size: 4rem;
     line-height: 5.5rem;
     letter-spacing: -1px;
+    margin-top: -80px;
+    white-space: nowrap;
 }
 h2{
     font-size: 3rem;
