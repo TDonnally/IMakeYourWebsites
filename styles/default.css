@@ -1,9 +1,15 @@
+button{
+    all: initial;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
 body{
     padding: 0px;
     margin: 0px;
     font-family: "Poppins", sans-serif;
     color: #333333;
     font-size: 16px;
+    box-sizing: border-box;
 }
 h1{
     font-size: 4rem;
@@ -105,11 +111,6 @@ h3{
     height: 100vh;
     padding: 4rem 1.25rem;
 }
-
-.section>div{
-    max-width: 1400px;
-    margin: 0 auto;
-}
 .hero{
     display: flex;
     flex-direction: column;
@@ -117,7 +118,7 @@ h3{
     gap: 10px;
     justify-content: center;
 }
-.cta-primary{
+.cta-primary, .form-container button{
     border-radius:20px;
     padding: 10px 20px;
     text-decoration: none;
@@ -127,7 +128,7 @@ h3{
     transition: all .3s;
     box-shadow: 1px 1px 0 #333333;
 }
-.cta-primary:hover, .navigation li:hover{
+.cta-primary:hover, .navigation li:hover, .form-container button:hover{
     background-color: #2980b9;
     box-shadow: 5px 5px 0 #333333;
 }
@@ -135,17 +136,12 @@ h3{
 .form-section{
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
-    gap: 20px;
     background: linear-gradient(to top, #f5f5f5 0%,#2980b9 15%);
-    color: #f5f5f5;
     background-color: #2980b9;
-}
-.form-section>div{
-    height:fit-content;
-    width: 50%;
-    z-index: 1;
-
+    color: #f5f5f5;
+    gap: 2rem;
 }
 .clouds{
     position: absolute;
@@ -168,16 +164,38 @@ h3{
 #grass{
     margin-left:-80px;
 }
+.form-section>div{
+    width: 50%;
+}
 .form-container{
-    padding: 20px;
+    padding: 2rem 4rem;
     border-radius: 20px;
     background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
+    z-index:1;
+    box-sizing: border-box;
+    color: #333333;
+}
+.form-container p{
+}
+.form-container form{
+    margin-bottom: 0px;
 }
 .form-container input{
     width: 100%;
     margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 2px solid #CCCCCC;
+    border-radius: 20px;
+    padding: .5rem 1rem;
+    color: #333333;
+    font-size: 1.5rem;
+}
+.form-container button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #333333;
 }
 .services{
     color: #333333;
